@@ -1,0 +1,7 @@
+<?php
+
+function piy_cust_theme_preprocess_page(&$variables){
+    $variables['piy_variable']='this text is generated using preprocess_hooks';
+    $variables['piy_variable_2']='this is overridden text';
+}
+?>

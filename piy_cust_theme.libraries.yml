@@ -1,0 +1,7 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      cust_css/piy_cust.css: {}
+  js: 
+      cust_js/piy_cust.js: {}

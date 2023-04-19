@@ -1,0 +1,56 @@
+{% import 'themes/custom/piy_cust_theme/tempelates/_macros.twig' as Macro %}
+<div id="page">
+ <div id="header-region">
+      <header>
+         {{ page.header}}
+      </header>
+      <div id="nav">
+        <div id="primary_menu">    
+          {{ page.primary_menu }}
+        </div>
+        <div id="secondary_menu">
+         <div id="sub_nav"> {{ page.secondary_menu }} </div>
+        </div>
+      </div>
+    </div>
+  <main role="main">
+  {{ page.breadcrumb }}
+<a id="main-content" tabindex="-1"></a>
+<div class="layout-content">
+      {{ page.content }}
+</div>
+<div id="content_below">
+{{ page.content_below }}
+<div>
+<br>
+ {{ piy_variable }}
+ <br>
+ {{ piy_variable_2 }}
+</div>
+</div>
+</main></body>
+</html>
+  theme name: {{ active_theme() }}
+  <br>
+  theme relative path: {{ active_theme_path() }}
+  <br>
+  this message is variable
+  <br>
+  {% set num = '1' %}
+   this is initialized vairable: {{ num }}
+   <br>
+  {% set num1 = num*5 %}
+  this is overridden variable: {{ num1 }}
+  this is overridden variable 
+
+<div id="macro">
+{{ Macro.input(name, value, type, size) }}
+</div>
+<script>console.log({{ _context | json_encode | raw}});</script>
+ <footer>
+    {{ page.footer }}
+ </footer>
+</div>
+
+
+
